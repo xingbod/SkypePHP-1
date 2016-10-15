@@ -44,7 +44,6 @@ class Skype {
 	}
 	
 	private function login() {
-		echo "Appel login\n";
 		$loginForm = $this->web("https://login.skype.com/login/oauth/microsoft?client_id=578134&redirect_uri=https%3A%2F%2Fweb.skype.com%2F&username={$this->username}", "GET", [], true, true);
 		
 		preg_match("`urlPost:'(.+)',`isU", $loginForm, $loginURL);
