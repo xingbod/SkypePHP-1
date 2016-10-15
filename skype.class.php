@@ -190,8 +190,6 @@ class Skype {
 		
 		curl_close($curl);
 		
-		echo "$url\n";
-		
 		return $result;
 	}
 	
